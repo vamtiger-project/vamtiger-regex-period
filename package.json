@@ -1,10 +1,10 @@
 {
     "name": "vamtiger-regex-period",
-    "version": "0.0.6",
+    "version": "0.0.7-0",
     "description": "A Regular Expression to Match a Period Character.",
     "main": "build",
     "scripts": {
-        "test": "npm run test-bundle && mocha build/test --recursive",
+        "test": "npm run test-bundle && mocha build/test --recursive && npm run clean",
         "clean": "rm -rf build/*",
         "build": "npm run clean && tsc",
         "test-build": "tsc",
