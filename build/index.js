@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var xregexp=require("xregexp"),pattern="\\.";const XRegExp=xregexp;var regex=XRegExp(pattern);const XRegExp$1=xregexp,flags="g";var global=XRegExp$1(pattern,"g");const XRegExp$2=xregexp,flags$1="m";var multiline=XRegExp$2(pattern,"m");const XRegExp$3=xregexp,flags$2="gm";var globalMultiline=XRegExp$3(pattern,"gm");exports.regex=regex,exports.globalRegex=global,exports.multilineRegex=multiline,exports.globalMultilineRegex=globalMultiline;
+//# sourceMappingURL=index.js.map
