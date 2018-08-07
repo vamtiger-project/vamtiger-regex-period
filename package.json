@@ -1,0 +1,49 @@
+{
+    "name": "vamtiger-regex-period",
+    "version": "0.0.14-0",
+    "description": "A Regular Expression to Match a Period Character.",
+    "main": "build",
+    "scripts": {
+        "test": "npm run test-bundle && mocha build/test --recursive && npm run clean",
+        "clean": "rm -rf build/*",
+        "build": "npm run clean && tsc",
+        "test-build": "tsc",
+        "build-types": "npm run clean && tsc --project tsconfig-declaration.json",
+        "test-build-types": "tsc --project tsconfig-declaration.json",
+        "commit": "vamtigerNodeTypescriptCommit --push --publish",
+        "bundle": "npm run clean && npm run build-types && vamtiger-bundle-typescript --relativePath --entryFilePath source/index.ts --bundleFilePath build/index.js --format cjs --sourcemap true --minify --copySourceMap",
+        "test-bundle": "npm run test-build && npm run test-build-types && vamtiger-bundle-typescript --relativePath --entryFilePath source/index.ts --bundleFilePath build/index.js --format cjs --sourcemap true --minify --copySourceMap",
+        "watch": "npm run clean && npm run build-types && vamtiger-bundle-typescript --relativePath --entryFilePath source/index.ts --bundleFilePath build/index.js --format cjs --sourcemap true --minify --copySourceMap --watch",
+        "test-watch": "npm run test-build && npm run test-build-types && vamtiger-bundle-typescript --relativePath --entryFilePath source/index.ts --bundleFilePath build/index.js --format cjs --sourcemap true --minify --copySourceMap --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vamtiger-project/vamtiger-regex-period.git"
+    },
+    "keywords": [
+        "vamtiger",
+        "regex",
+        "period"
+    ],
+    "author": "Vamtiger Immortalles",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/vamtiger-project/vamtiger-regex-period/issues"
+    },
+    "homepage": "https://github.com/vamtiger-project/vamtiger-regex-period#readme",
+    "types": "build/index.d.ts",
+    "devDependencies": {
+        "@types/chai": "^4.1.4",
+        "@types/mocha": "^5.2.5",
+        "@types/node": "^10.5.7",
+        "@types/xregexp": "^3.0.29",
+        "chai": "^4.1.2",
+        "mocha": "^5.2.0",
+        "typescript": "^3.0.1",
+        "vamtiger-bundle-typescript": "latest",
+        "vamtiger-node-typescript-commit": "latest"
+    },
+    "dependencies": {
+        "xregexp": "^4.2.0"
+    }
+}
