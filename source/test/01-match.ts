@@ -1,4 +1,4 @@
-import { regex, globalRegex, multilineRegex } from '../index';
+import { regex, globalRegex } from '../index';
 import { expect } from 'chai';
 
 describe('match a period in a string', function () {
