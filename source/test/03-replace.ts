@@ -1,6 +1,6 @@
-import { regex, globalRegex, multilineRegex, globalMultilineRegex } from '../index';
 import { expect } from 'chai';
 
+const { regex, globalRegex, multilineRegex, globalMultilineRegex } = require('..');
 const replacement = '*';
 
 describe('replace a period', function () {

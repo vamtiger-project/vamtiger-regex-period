@@ -1,11 +1,10 @@
-import { regex } from '../index';
 import { expect } from 'chai';
+const { regex } = require('..');
 
 describe('split a string by', function () {
     it('period', function () {
         const string = 'some/string.1.2.3';
         const split = string.split(regex);
-        const expected = '.';
 
         expect(split).to.be.ok;
         expect(split.length).to.equal(4);

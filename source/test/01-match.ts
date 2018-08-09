@@ -1,5 +1,5 @@
-import { regex, globalRegex } from '../index';
-import { expect } from 'chai';
+ import { expect } from 'chai';
+ const { regex, globalRegex } = require('..');
 
 describe('match a period in a string', function () {
     it('leading', function () {
