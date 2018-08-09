@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-regex-period",
-    "version": "0.0.19-0",
+    "version": "0.0.20-0",
     "description": "A Regular Expression to Match a Period Character.",
     "main": "build",
     "scripts": {
