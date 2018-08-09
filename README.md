@@ -14,6 +14,7 @@ yarn add vamtiger-regex-period
 ## Usage
 [Import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) or [require](https://nodejs.org/api/modules.html#modules_require) a referece to [VAMTIGER Regex Period](https://github.com/vamtiger-project/vamtiger-regex-period):
 ```javascript
+/// <reference path="../node_modules/vamtiger-regex-period/build/index.d.ts"/>
 import { regex } from 'vamtiger-regex-period';
 ```
 or
