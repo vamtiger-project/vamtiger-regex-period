@@ -21,7 +21,8 @@ declare module "multiline" {
     const _default_4: RegExp;
     export default _default_4;
 }
-declare module "index" {
+/// <amd-module name="vamtiger-regex-period" />
+declare module "vamtiger-regex-period" {
     export { default as regex } from "regex";
     export { default as globalRegex } from "global";
     export { default as multilineRegex } from "multiline";
